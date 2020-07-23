@@ -1,5 +1,6 @@
 { config, pkgs, ... }: {
-  imports = [ <sops-nix/modules/sops> ];
+  # This module can't be found - how can I import it such that it "counts"?
+  imports = [ <sops-nix/modules/sops> ]; # <------ THIS
 
   # Some values to make nixos stop complaining:
   fileSystems."/" = {
